@@ -1,0 +1,38 @@
+.project-sc {
+    .project-list {
+      gap: 12px;
+      display: grid;
+      grid-template-columns: 100%;
+      margin-left: 24px;
+      padding: 16px 0;
+    }
+    .project-icon {
+      width: 500px;
+    }
+    .project-item {
+      column-gap: 16px;
+      grid-template-columns: auto;
+      margin: 12px 0;
+    }
+    .project-provider {
+      color: $gray;
+      font-weight: 500;
+    }
+    .project-course {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .project-info {
+      grid-template-columns: 2fr 1fr;
+      @media (max-width: 768px) {
+        grid-template-columns: 100%;
+      }
+    }
+    .project-info-r {
+      color: $white;
+      font-size: 15px;
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+      }
+    }
+  }
